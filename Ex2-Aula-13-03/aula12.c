@@ -76,5 +76,11 @@ void inverte (int n, int*vet)
 
 double avalia (double* poli, int grau, double x)
 {
-    
+    int i;
+    double soma=0;
+    for(i=0 ; i<grau+1 ; i++)
+    {
+        soma += poli[i] * pow(x, i);
+    }
+    return soma;
 }
