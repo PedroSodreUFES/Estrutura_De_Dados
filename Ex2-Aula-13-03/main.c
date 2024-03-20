@@ -19,7 +19,7 @@ int main(int argc, char **argv)
     float *x2=malloc(sizeof(float));
     if(raizes(a, b, c, x1, x2))
     {
-        printf("peguei as raízes\n");
+        printf("peguei as raizes\n");
     }
     else
     {
@@ -49,6 +49,8 @@ int main(int argc, char **argv)
     free(vet2);
 
     //avalia de polinomios
+    double vet3[] = {12, 2, 3};
+    printf("quando x=1: %.2f\nquando x=2: %.2f\n", avalia(vet3, 2, 1), avalia(vet3, 2, 2));
     
     return 0;
 }

@@ -78,7 +78,7 @@ double avalia (double* poli, int grau, double x)
 {
     int i;
     double soma=0;
-    for(i=0 ; i<grau+1 ; i++)
+    for(i=0 ; i<=grau ; i++)
     {
         soma += poli[i] * pow(x, i);
     }
