@@ -9,9 +9,10 @@ struct _tProduto{
     float preco;
 };
 
-tProduto *allocaProduto()
+tProduto *alocaProduto()
 {
     tProduto *p = malloc(sizeof(tProduto));
+    p->nome=NULL;
     return p;
 }
 
@@ -61,19 +62,5 @@ int retornaQuantidadeProduto(tProduto *p)
 
 void imprimeProduto(tProduto *p)
 {
-    printf("Item: %s, valor unitário: %.2f, quantidade: %d\n", retornaNomeProduto(p), retornaPrecoProduto(p), retornaQuantidadeProduto(p));
-}
-
-tProduto **alocaListaDeProdutos()
-{
-    tProduto **lista = malloc(sizeof(tProduto*));
-    return lista;
-}
-
-//isso aqui tem de ir pra filial
-void AdicionaProduto(tProduto **lista, tProduto *p, int i)
-{
-    i++;
-    lista = (tProduto**)realloc(lista, i*sizeof(tProduto*));
-    lista[i-1]=p;
+    printf("\t\tItem: %s, valor unitário: %.2f, quantidade: %d\n", retornaNomeProduto(p), retornaPrecoProduto(p), retornaQuantidadeProduto(p));
 }
