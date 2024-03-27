@@ -52,7 +52,7 @@ void imprimeMatriz(Matriz* mat)
             printf("%d", recuperaElemento(mat, i, j));
             if(j!= recuperaNColunas(mat)-1)
             {
-                printf(" |");
+                printf(" | ");
             }
         }
         printf("\n");
