@@ -30,7 +30,7 @@ void insereCelulaLista(tCelula *c, tLista *l)
     {
         tCelula *a = l->prim;
         l->prim =c;
-        atribuiProxCelula(l->prim, a);
+        atribuiProxCelula(c, a);
     }
 }
 
