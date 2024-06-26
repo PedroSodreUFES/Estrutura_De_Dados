@@ -7,12 +7,14 @@
 
 typedef struct aluno tAluno;
 
-tAluno* inicAluno(char* nome, int agressividade);
+tAluno* inicAluno(char* nome, int matricula);
 
 void imprimeAluno(tAluno* a);
 
 char* retornaNome(tAluno* a);
 
 void liberaAluno(tAluno* cat);
+
+int retornaMatricula(tAluno *a);
 
 #endif
