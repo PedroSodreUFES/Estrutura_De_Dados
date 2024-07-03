@@ -26,7 +26,7 @@ tArvore *insereArvore(tArvore *raiz, void *conteudo, Maior compara)
     {
         tArvore *raiz = inicializaArvore(conteudo);
     }
-    else if(compara(conteudo, raiz->conteudo)) // maior
+    else if(compara(conteudo, raiz->conteudo)==1) // maior
     {
         raiz->dir = insereArvore(raiz->dir, conteudo, compara);
     }
